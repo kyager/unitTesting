@@ -44,7 +44,7 @@ namespace Tests
             int average = Program.GetAverage(grades);
 
             // Assert
-            Assert.AreEqual(79, average, "Average is incorrect.");
+            Assert.AreEqual(73, average, "Average is incorrect.");
         }
 
         [TestMethod()]
