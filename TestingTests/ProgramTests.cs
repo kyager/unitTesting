@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Tests
 {
@@ -44,6 +45,16 @@ namespace Tests
 
             // Assert
             Assert.AreEqual(79, average, "Average is incorrect.");
+        }
+
+        [TestMethod()]
+        public void SlowTest()
+        {
+            // Wait 3 seconds
+            System.Threading.Thread.Sleep(3000);
+
+            // Assert
+            Assert.IsTrue(true);
         }
     }
 }
